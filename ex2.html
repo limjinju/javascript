@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부대킹</title>
+
+    <style>
+        h1{
+            text-align: center; color:red;
+        }
+
+
+
+
+
+
+
+        ul{
+            list-style: none;
+            text-align: center;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            padding: 10px 0;
+        }
+
+        ul li{
+            display:inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a:hover{
+            text-decoration: underline;
+        }
+
+
+
+
+        section#main {
+            float: right;
+            width: 70%;
+            height: 200px;
+            background-color: white;
+        }
+
+        nav{
+            float: left;
+            width: 30%;
+            height: 200px;
+            background-color: rgb(243, 97, 18);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>부대킹</h1>
+
+    
+    </header>
+
+    
+
+
+
+
+    <ul>
+        <li><a href="#">           브랜드             </a></li>
+        <li><a href="#">              메뉴     </a></li>
+        <li><a href="#">          매장안내            </a></li>
+       
+        <li><a href="#">          창업안내         </a></li>
+        <li><a href="#">          소식         </a></li>
+        <li><a href="#">          멤버십         </a></li>
+     
+        <li><a href="#">         고객센터          </a></li>
+    </ul>
+  
+
+
+
+
+
+    <img src="1.jpeg" id="image">
+
+    <script>
+        let num=0;
+
+        function show(){
+            if(num==0){
+                document.getElementById("image").src="2.jpeg";
+                num=1;
+            } else if(num==1){
+                document.getElementById("image").src="3.jpeg";
+                num=2;
+            } else if(num==2){
+                document.getElementById("image").src="4.jpeg";
+                num=3;
+            } else{
+                document.getElementById("image").src="1.jpeg";
+                num=0;
+            }
+
+            setTimeout('show()',2000);
+        }
+
+        show();
+
+
+       
+
+    </script>
+
+
+
+<article>
+  
+    <p>한국전쟁이 한창이던 시절, 미군부대 근처에서는 소시지와 햄을 쉽게 구할 수 있었다. <br>
+        햄과 소시지, 미국식 콩 통조림 등의 서양재료를 넣어 김치, 고추장과 함께 얼큰한 우리식의 찌개로 끓여낸 이 부대찌개는 <br>
+        전쟁이 끝나고 미국이 주둔하면서 소시지와 햄 등 일명 '부대고기'라는 식재료가 있었기에 가능했다. <br>
+        부대찌개는 부대에서 군인들이 즐겨 먹었던 음식이 아니라 미군 부대 주변에 살던 사람들이 주로 만들어 먹었던 음식이다. <br>
+
+
+        </p>
+</article>
+<br>
+<br>
+<h2>BEST 추가 상품</h2>
+
+<tr>
+    <td><img src="10.jpeg" width="200" height="200"/></td>
+    <td><img src="11.jpeg" width="200" height="200"/></td>
+    <td><img src="12.jpeg" width="200" height="200"/></td>
+    <td><img src="13.jpeg" width="200" height="200"/></td>
+   
+
+
+
+<br>
+<br>
+<br>
+
+<h2>인기 밥 메뉴</h2>
+
+<tr>
+    <td><img src="20.jpeg" width="200" height="200"/></td>
+    <td><img src="21.jpeg" width="200" height="200"/></td>
+    <td><img src="22.jpeg" width="200" height="200"/></td>
+    <td><img src="23.jpeg" width="200" height="200"/></td>
+    
+</tr>
+
+<br>
+<br>
+<br>
+<h2>음료 추가</h2>
+
+<tr>
+    <td><img src="30.jpeg" width="200" height="200"/></td>
+    <td><img src="31.jpeg" width="200" height="200"/></td>
+    <td><img src="33.jpeg" width="200" height="200"/></td>
+    <td><img src="34.jpeg" width="200" height="200"/></td>
+    
+</tr>
+
+</body>
+</html>
